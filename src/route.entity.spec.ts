@@ -68,6 +68,7 @@ describe('Route Tests', () => {
     
         route.updatePoints(points);
         expect(route.points).toHaveLength(1);
+        expect(route.points).toStrictEqual(points);
         
     })
 })
