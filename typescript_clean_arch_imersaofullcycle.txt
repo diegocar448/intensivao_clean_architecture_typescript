@@ -1,0 +1,21 @@
+//criamos o package.json
+npm init -y
+
+//instalamos o typeScript apenas no modo desenvolvedor
+npm install typescript --save-dev
+
+//npx pega direto online, criar manifesto
+npx tsc --init
+
+//usamos para testes automatizados
+npx jest --init
+
+//swc ferramenta que faz a compilação de typeScript em javaScript
+// instalar swc
+npm install @swc/jest @swc/core --save-dev
+
+//instalar jest e jestype
+npm install jest @types/jest --save-dev
+
+//instalar ts-node para rodar os testes sem compilar
+npm install ts-node --save-dev
