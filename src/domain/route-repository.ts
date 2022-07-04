@@ -6,6 +6,7 @@ export interface RouteRepositoryInterface{
 
     //vamos add o Promise deixando assincrono
     insert(route: Route): Promise<void>
+    findAll(): Promise<Route[]>
 }
 
 // DIP

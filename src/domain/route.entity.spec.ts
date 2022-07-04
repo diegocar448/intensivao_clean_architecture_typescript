@@ -24,6 +24,8 @@ describe('Route Tests', () => {
             ]
         }
         route = new Route(routeProps);
+        //validação para ver se o id foi definido
+        expect(route.id).toBeDefined();
         expect(route.props).toStrictEqual({
             ...routeProps, points: [
                 {lat: 10, lng: 11},
