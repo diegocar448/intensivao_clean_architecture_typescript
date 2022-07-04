@@ -43,7 +43,7 @@ describe('Route Tests', () => {
         expect(route.title).toBe('title updated');
     })
 
-    test('updatePosition method', () => {
+    test('updatePosition method', () => {   
         const routeProps: RouteProps = {
             title: 'minharota',
             startPosition: {lat:0, lng: 1},
