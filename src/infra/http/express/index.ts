@@ -17,7 +17,7 @@ app.get('/routes', async(_req: Request, res: Response) => {
     //aqui vamos criar a instancia do caso de uso
     const listAllUseCase = new ListAllRoutesUseCase(routeRepo);
     //agora chamamos o caso de uso
-    const output = await listAllUseCase.execute();
+    const output = await listAllUseCase.execute(_req.body);
     res.json(output);
 });
 

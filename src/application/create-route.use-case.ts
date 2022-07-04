@@ -3,6 +3,14 @@ import { LatLng, Route } from "../domain/route.entity";
 
 export class CreateRouteUseCase{
 
+    /////////////////////////////////////////////////////////////////////////////////////////
+    //exemplificação se fosse usado um mysql nesse caso
+    /////////////////////////////////////////////////////////////////////////////////////////
+    // Se acrescentassemos um BD teria uma implementação do MySql por exemplo seria um
+    //adaptador do MySql que iria interagir com o meu caso de uso através da porta que é
+    //a minha interface
+    /////////////////////////////////////////////////////////////////////////////////////////
+
     // aqui será a lib que terá que lidar com a interface e não o contrario
     constructor(private routeRepo: RouteRepositoryInterface){
 
