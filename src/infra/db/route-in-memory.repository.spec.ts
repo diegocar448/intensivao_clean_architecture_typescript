@@ -1,5 +1,5 @@
-import { Route, RouteProps } from "../domain/route.entity";
-import { RouteInMemoryRepository } from "./route-in-memory.repository"
+import { RouteInMemoryRepository } from "./route-in-memory.repository";
+import { Route, RouteProps } from "../../domain/route.entity";
 
 describe('RouteInMemoryRepository Test', () =>{
     it('should insert a new route', async () => {
